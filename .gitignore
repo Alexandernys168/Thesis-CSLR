@@ -1,0 +1,17 @@
+ASL/.venv
+
+ASL/1/wlasl-complete/videos
+
+ASL/checkpoints
+
+ASL/__pycache__
+
+ASL/data_tensors
+
+ASL/tensors_hand_crop
+
+*.mp4
+
+*.pth
+
+

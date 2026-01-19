@@ -1,0 +1,3579 @@
+[
+    {
+        "video_id": "07092",
+        "gloss": "book",
+        "label": 0,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07093",
+        "gloss": "book",
+        "label": 0,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07094",
+        "gloss": "book",
+        "label": 0,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07095",
+        "gloss": "book",
+        "label": 0,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07096",
+        "gloss": "book",
+        "label": 0,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07098",
+        "gloss": "book",
+        "label": 0,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07099",
+        "gloss": "book",
+        "label": 0,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07072",
+        "gloss": "book",
+        "label": 0,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07083",
+        "gloss": "book",
+        "label": 0,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69302",
+        "gloss": "drink",
+        "label": 1,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68538",
+        "gloss": "drink",
+        "label": 1,
+        "frame_start": 1,
+        "frame_end": 71
+    },
+    {
+        "video_id": "68042",
+        "gloss": "drink",
+        "label": 1,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17730",
+        "gloss": "drink",
+        "label": 1,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17734",
+        "gloss": "drink",
+        "label": 1,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17713",
+        "gloss": "drink",
+        "label": 1,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17716",
+        "gloss": "drink",
+        "label": 1,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17718",
+        "gloss": "drink",
+        "label": 1,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17724",
+        "gloss": "drink",
+        "label": 1,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "12312",
+        "gloss": "computer",
+        "label": 2,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "12332",
+        "gloss": "computer",
+        "label": 2,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "12333",
+        "gloss": "computer",
+        "label": 2,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "12335",
+        "gloss": "computer",
+        "label": 2,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "12336",
+        "gloss": "computer",
+        "label": 2,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "12315",
+        "gloss": "computer",
+        "label": 2,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "12320",
+        "gloss": "computer",
+        "label": 2,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67519",
+        "gloss": "computer",
+        "label": 2,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "12326",
+        "gloss": "computer",
+        "label": 2,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "05746",
+        "gloss": "before",
+        "label": 3,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "05750",
+        "gloss": "before",
+        "label": 3,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "05735",
+        "gloss": "before",
+        "label": 3,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "05736",
+        "gloss": "before",
+        "label": 3,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "05727",
+        "gloss": "before",
+        "label": 3,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "05737",
+        "gloss": "before",
+        "label": 3,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "05739",
+        "gloss": "before",
+        "label": 3,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "05741",
+        "gloss": "before",
+        "label": 3,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "09867",
+        "gloss": "chair",
+        "label": 4,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "09851",
+        "gloss": "chair",
+        "label": 4,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "09854",
+        "gloss": "chair",
+        "label": 4,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "09855",
+        "gloss": "chair",
+        "label": 4,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67483",
+        "gloss": "chair",
+        "label": 4,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "09862",
+        "gloss": "chair",
+        "label": 4,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69345",
+        "gloss": "go",
+        "label": 5,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "24960",
+        "gloss": "go",
+        "label": 5,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "24946",
+        "gloss": "go",
+        "label": 5,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "24948",
+        "gloss": "go",
+        "label": 5,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67715",
+        "gloss": "go",
+        "label": 5,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "24952",
+        "gloss": "go",
+        "label": 5,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "11311",
+        "gloss": "clothes",
+        "label": 6,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "11314",
+        "gloss": "clothes",
+        "label": 6,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "11315",
+        "gloss": "clothes",
+        "label": 6,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "11318",
+        "gloss": "clothes",
+        "label": 6,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "11319",
+        "gloss": "clothes",
+        "label": 6,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "11325",
+        "gloss": "clothes",
+        "label": 6,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "63226",
+        "gloss": "who",
+        "label": 7,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "63229",
+        "gloss": "who",
+        "label": 7,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "63230",
+        "gloss": "who",
+        "label": 7,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "63233",
+        "gloss": "who",
+        "label": 7,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "63234",
+        "gloss": "who",
+        "label": 7,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "63237",
+        "gloss": "who",
+        "label": 7,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "08929",
+        "gloss": "candy",
+        "label": 8,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "08918",
+        "gloss": "candy",
+        "label": 8,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "08922",
+        "gloss": "candy",
+        "label": 8,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65300",
+        "gloss": "candy",
+        "label": 8,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "08915",
+        "gloss": "candy",
+        "label": 8,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67468",
+        "gloss": "candy",
+        "label": 8,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "08925",
+        "gloss": "candy",
+        "label": 8,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65415",
+        "gloss": "cousin",
+        "label": 9,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13633",
+        "gloss": "cousin",
+        "label": 9,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13634",
+        "gloss": "cousin",
+        "label": 9,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13635",
+        "gloss": "cousin",
+        "label": 9,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13639",
+        "gloss": "cousin",
+        "label": 9,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67535",
+        "gloss": "cousin",
+        "label": 9,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13641",
+        "gloss": "cousin",
+        "label": 9,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "14901",
+        "gloss": "deaf",
+        "label": 10,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "14903",
+        "gloss": "deaf",
+        "label": 10,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "14883",
+        "gloss": "deaf",
+        "label": 10,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "14887",
+        "gloss": "deaf",
+        "label": 10,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "14888",
+        "gloss": "deaf",
+        "label": 10,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "14891",
+        "gloss": "deaf",
+        "label": 10,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65717",
+        "gloss": "fine",
+        "label": 11,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "21886",
+        "gloss": "fine",
+        "label": 11,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "21887",
+        "gloss": "fine",
+        "label": 11,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "21890",
+        "gloss": "fine",
+        "label": 11,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "21872",
+        "gloss": "fine",
+        "label": 11,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "21874",
+        "gloss": "fine",
+        "label": 11,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69364",
+        "gloss": "help",
+        "label": 12,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "27219",
+        "gloss": "help",
+        "label": 12,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "27220",
+        "gloss": "help",
+        "label": 12,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "27209",
+        "gloss": "help",
+        "label": 12,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "27213",
+        "gloss": "help",
+        "label": 12,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65891",
+        "gloss": "help",
+        "label": 12,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69411",
+        "gloss": "no",
+        "label": 13,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68110",
+        "gloss": "no",
+        "label": 13,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68406",
+        "gloss": "no",
+        "label": 13,
+        "frame_start": 1,
+        "frame_end": 54
+    },
+    {
+        "video_id": "38525",
+        "gloss": "no",
+        "label": 13,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "38531",
+        "gloss": "no",
+        "label": 13,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "38533",
+        "gloss": "no",
+        "label": 13,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57948",
+        "gloss": "thin",
+        "label": 14,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57941",
+        "gloss": "thin",
+        "label": 14,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "66607",
+        "gloss": "thin",
+        "label": 14,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57933",
+        "gloss": "thin",
+        "label": 14,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57943",
+        "gloss": "thin",
+        "label": 14,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57944",
+        "gloss": "thin",
+        "label": 14,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57945",
+        "gloss": "thin",
+        "label": 14,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68852",
+        "gloss": "walk",
+        "label": 15,
+        "frame_start": 1,
+        "frame_end": 64
+    },
+    {
+        "video_id": "68918",
+        "gloss": "walk",
+        "label": 15,
+        "frame_start": 1,
+        "frame_end": 120
+    },
+    {
+        "video_id": "68177",
+        "gloss": "walk",
+        "label": 15,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "62160",
+        "gloss": "walk",
+        "label": 15,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "62166",
+        "gloss": "walk",
+        "label": 15,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "62158",
+        "gloss": "walk",
+        "label": 15,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "64201",
+        "gloss": "year",
+        "label": 16,
+        "frame_start": 1,
+        "frame_end": 77
+    },
+    {
+        "video_id": "64211",
+        "gloss": "year",
+        "label": 16,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68416",
+        "gloss": "year",
+        "label": 16,
+        "frame_start": 1,
+        "frame_end": 64
+    },
+    {
+        "video_id": "68190",
+        "gloss": "year",
+        "label": 16,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "64210",
+        "gloss": "year",
+        "label": 16,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "64209",
+        "gloss": "year",
+        "label": 16,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "64216",
+        "gloss": "year",
+        "label": 16,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69546",
+        "gloss": "yes",
+        "label": 17,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "64287",
+        "gloss": "yes",
+        "label": 17,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68192",
+        "gloss": "yes",
+        "label": 17,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "64293",
+        "gloss": "yes",
+        "label": 17,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "64297",
+        "gloss": "yes",
+        "label": 17,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "64298",
+        "gloss": "yes",
+        "label": 17,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68001",
+        "gloss": "all",
+        "label": 18,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68720",
+        "gloss": "all",
+        "label": 18,
+        "frame_start": 1,
+        "frame_end": 69
+    },
+    {
+        "video_id": "01986",
+        "gloss": "all",
+        "label": 18,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "01996",
+        "gloss": "all",
+        "label": 18,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "01997",
+        "gloss": "all",
+        "label": 18,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "01999",
+        "gloss": "all",
+        "label": 18,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69236",
+        "gloss": "black",
+        "label": 19,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68230",
+        "gloss": "black",
+        "label": 19,
+        "frame_start": 1,
+        "frame_end": 49
+    },
+    {
+        "video_id": "06476",
+        "gloss": "black",
+        "label": 19,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "06481",
+        "gloss": "black",
+        "label": 19,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "06483",
+        "gloss": "black",
+        "label": 19,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13197",
+        "gloss": "cool",
+        "label": 20,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13198",
+        "gloss": "cool",
+        "label": 20,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65402",
+        "gloss": "cool",
+        "label": 20,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13203",
+        "gloss": "cool",
+        "label": 20,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13196",
+        "gloss": "cool",
+        "label": 20,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13207",
+        "gloss": "cool",
+        "label": 20,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "21942",
+        "gloss": "finish",
+        "label": 21,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "21944",
+        "gloss": "finish",
+        "label": 21,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "21946",
+        "gloss": "finish",
+        "label": 21,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "21949",
+        "gloss": "finish",
+        "label": 21,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "21952",
+        "gloss": "finish",
+        "label": 21,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69368",
+        "gloss": "hot",
+        "label": 22,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "28112",
+        "gloss": "hot",
+        "label": 22,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "28119",
+        "gloss": "hot",
+        "label": 22,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "28121",
+        "gloss": "hot",
+        "label": 22,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69389",
+        "gloss": "like",
+        "label": 23,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68093",
+        "gloss": "like",
+        "label": 23,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "33286",
+        "gloss": "like",
+        "label": 23,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "33268",
+        "gloss": "like",
+        "label": 23,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "33270",
+        "gloss": "like",
+        "label": 23,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "33271",
+        "gloss": "like",
+        "label": 23,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "33280",
+        "gloss": "like",
+        "label": 23,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69396",
+        "gloss": "many",
+        "label": 24,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "34828",
+        "gloss": "many",
+        "label": 24,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "34834",
+        "gloss": "many",
+        "label": 24,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "34836",
+        "gloss": "many",
+        "label": 24,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69402",
+        "gloss": "mother",
+        "label": 25,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "36945",
+        "gloss": "mother",
+        "label": 25,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "36934",
+        "gloss": "mother",
+        "label": 25,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67908",
+        "gloss": "mother",
+        "label": 25,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "36940",
+        "gloss": "mother",
+        "label": 25,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69413",
+        "gloss": "now",
+        "label": 26,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "38994",
+        "gloss": "now",
+        "label": 26,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "39000",
+        "gloss": "now",
+        "label": 26,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "39005",
+        "gloss": "now",
+        "label": 26,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "38991",
+        "gloss": "now",
+        "label": 26,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69422",
+        "gloss": "orange",
+        "label": 27,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "40118",
+        "gloss": "orange",
+        "label": 27,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67949",
+        "gloss": "orange",
+        "label": 27,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "40126",
+        "gloss": "orange",
+        "label": 27,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "56552",
+        "gloss": "table",
+        "label": 28,
+        "frame_start": 24,
+        "frame_end": 80
+    },
+    {
+        "video_id": "68972",
+        "gloss": "table",
+        "label": 28,
+        "frame_start": 1,
+        "frame_end": 54
+    },
+    {
+        "video_id": "56578",
+        "gloss": "table",
+        "label": 28,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67275",
+        "gloss": "table",
+        "label": 28,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "56567",
+        "gloss": "table",
+        "label": 28,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57646",
+        "gloss": "thanksgiving",
+        "label": 29,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57628",
+        "gloss": "thanksgiving",
+        "label": 29,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57629",
+        "gloss": "thanksgiving",
+        "label": 29,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57637",
+        "gloss": "thanksgiving",
+        "label": 29,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57639",
+        "gloss": "thanksgiving",
+        "label": 29,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57640",
+        "gloss": "thanksgiving",
+        "label": 29,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69531",
+        "gloss": "what",
+        "label": 30,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "62967",
+        "gloss": "what",
+        "label": 30,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "62987",
+        "gloss": "what",
+        "label": 30,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "62988",
+        "gloss": "what",
+        "label": 30,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "62975",
+        "gloss": "what",
+        "label": 30,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "62965",
+        "gloss": "what",
+        "label": 30,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68187",
+        "gloss": "woman",
+        "label": 31,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68764",
+        "gloss": "woman",
+        "label": 31,
+        "frame_start": 1,
+        "frame_end": 54
+    },
+    {
+        "video_id": "63669",
+        "gloss": "woman",
+        "label": 31,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "63664",
+        "gloss": "woman",
+        "label": 31,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "63675",
+        "gloss": "woman",
+        "label": 31,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "05643",
+        "gloss": "bed",
+        "label": 32,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65163",
+        "gloss": "bed",
+        "label": 32,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67400",
+        "gloss": "bed",
+        "label": 32,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "05639",
+        "gloss": "bed",
+        "label": 32,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69238",
+        "gloss": "blue",
+        "label": 33,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67420",
+        "gloss": "blue",
+        "label": 33,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "06843",
+        "gloss": "blue",
+        "label": 33,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "06845",
+        "gloss": "blue",
+        "label": 33,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07403",
+        "gloss": "bowling",
+        "label": 34,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07388",
+        "gloss": "bowling",
+        "label": 34,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07398",
+        "gloss": "bowling",
+        "label": 34,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07400",
+        "gloss": "bowling",
+        "label": 34,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69257",
+        "gloss": "can",
+        "label": 35,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65294",
+        "gloss": "can",
+        "label": 35,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67465",
+        "gloss": "can",
+        "label": 35,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "08945",
+        "gloss": "can",
+        "label": 35,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "08947",
+        "gloss": "can",
+        "label": 35,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68035",
+        "gloss": "dog",
+        "label": 36,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17097",
+        "gloss": "dog",
+        "label": 36,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65506",
+        "gloss": "dog",
+        "label": 36,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17083",
+        "gloss": "dog",
+        "label": 36,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67578",
+        "gloss": "dog",
+        "label": 36,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17096",
+        "gloss": "dog",
+        "label": 36,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69316",
+        "gloss": "family",
+        "label": 37,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67642",
+        "gloss": "family",
+        "label": 37,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "20989",
+        "gloss": "family",
+        "label": 37,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "20991",
+        "gloss": "family",
+        "label": 37,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "22114",
+        "gloss": "fish",
+        "label": 38,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "22117",
+        "gloss": "fish",
+        "label": 38,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "22113",
+        "gloss": "fish",
+        "label": 38,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67667",
+        "gloss": "fish",
+        "label": 38,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "22126",
+        "gloss": "fish",
+        "label": 38,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "22128",
+        "gloss": "fish",
+        "label": 38,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65843",
+        "gloss": "graduate",
+        "label": 39,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "25330",
+        "gloss": "graduate",
+        "label": 39,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67722",
+        "gloss": "graduate",
+        "label": 39,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69359",
+        "gloss": "hat",
+        "label": 40,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67745",
+        "gloss": "hat",
+        "label": 40,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "26721",
+        "gloss": "hat",
+        "label": 40,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "26723",
+        "gloss": "hat",
+        "label": 40,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65884",
+        "gloss": "hearing",
+        "label": 41,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67750",
+        "gloss": "hearing",
+        "label": 41,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "26982",
+        "gloss": "hearing",
+        "label": 41,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "26984",
+        "gloss": "hearing",
+        "label": 41,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "31750",
+        "gloss": "kiss",
+        "label": 42,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "31751",
+        "gloss": "kiss",
+        "label": 42,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "31757",
+        "gloss": "kiss",
+        "label": 42,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "31758",
+        "gloss": "kiss",
+        "label": 42,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "31749",
+        "gloss": "kiss",
+        "label": 42,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "31759",
+        "gloss": "kiss",
+        "label": 42,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68904",
+        "gloss": "language",
+        "label": 43,
+        "frame_start": 1,
+        "frame_end": 69
+    },
+    {
+        "video_id": "32156",
+        "gloss": "language",
+        "label": 43,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32157",
+        "gloss": "language",
+        "label": 43,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32154",
+        "gloss": "language",
+        "label": 43,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67827",
+        "gloss": "language",
+        "label": 43,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32166",
+        "gloss": "language",
+        "label": 43,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32167",
+        "gloss": "language",
+        "label": 43,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32320",
+        "gloss": "later",
+        "label": 44,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32323",
+        "gloss": "later",
+        "label": 44,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32325",
+        "gloss": "later",
+        "label": 44,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "66015",
+        "gloss": "later",
+        "label": 44,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67829",
+        "gloss": "later",
+        "label": 44,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32329",
+        "gloss": "later",
+        "label": 44,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69395",
+        "gloss": "man",
+        "label": 45,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "66097",
+        "gloss": "man",
+        "label": 45,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67872",
+        "gloss": "man",
+        "label": 45,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "34743",
+        "gloss": "man",
+        "label": 45,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "51077",
+        "gloss": "shirt",
+        "label": 46,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "51081",
+        "gloss": "shirt",
+        "label": 46,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "51066",
+        "gloss": "shirt",
+        "label": 46,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "51067",
+        "gloss": "shirt",
+        "label": 46,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "51068",
+        "gloss": "shirt",
+        "label": 46,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "51071",
+        "gloss": "shirt",
+        "label": 46,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68428",
+        "gloss": "study",
+        "label": 47,
+        "frame_start": 1,
+        "frame_end": 84
+    },
+    {
+        "video_id": "55371",
+        "gloss": "study",
+        "label": 47,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "55373",
+        "gloss": "study",
+        "label": 47,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "55375",
+        "gloss": "study",
+        "label": 47,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "56840",
+        "gloss": "tall",
+        "label": 48,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "56843",
+        "gloss": "tall",
+        "label": 48,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "56845",
+        "gloss": "tall",
+        "label": 48,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "66591",
+        "gloss": "tall",
+        "label": 48,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67278",
+        "gloss": "tall",
+        "label": 48,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "56850",
+        "gloss": "tall",
+        "label": 48,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69533",
+        "gloss": "white",
+        "label": 49,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "63211",
+        "gloss": "white",
+        "label": 49,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "63213",
+        "gloss": "white",
+        "label": 49,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "63201",
+        "gloss": "white",
+        "label": 49,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68189",
+        "gloss": "wrong",
+        "label": 50,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67010",
+        "gloss": "wrong",
+        "label": 50,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "64095",
+        "gloss": "wrong",
+        "label": 50,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "64097",
+        "gloss": "wrong",
+        "label": 50,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "00625",
+        "gloss": "accident",
+        "label": 51,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "00626",
+        "gloss": "accident",
+        "label": 51,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "00627",
+        "gloss": "accident",
+        "label": 51,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67342",
+        "gloss": "accident",
+        "label": 51,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "00634",
+        "gloss": "accident",
+        "label": 51,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "00635",
+        "gloss": "accident",
+        "label": 51,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69213",
+        "gloss": "apple",
+        "label": 52,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "03004",
+        "gloss": "apple",
+        "label": 52,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65086",
+        "gloss": "apple",
+        "label": 52,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "02999",
+        "gloss": "apple",
+        "label": 52,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69233",
+        "gloss": "bird",
+        "label": 53,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "06335",
+        "gloss": "bird",
+        "label": 53,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "06330",
+        "gloss": "bird",
+        "label": 53,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "06340",
+        "gloss": "bird",
+        "label": 53,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "09950",
+        "gloss": "change",
+        "label": 54,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "09955",
+        "gloss": "change",
+        "label": 54,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "09957",
+        "gloss": "change",
+        "label": 54,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69274",
+        "gloss": "color",
+        "label": 55,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "11772",
+        "gloss": "color",
+        "label": 55,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67514",
+        "gloss": "color",
+        "label": 55,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "11778",
+        "gloss": "color",
+        "label": 55,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13325",
+        "gloss": "corn",
+        "label": 56,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67530",
+        "gloss": "corn",
+        "label": 56,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13334",
+        "gloss": "corn",
+        "label": 56,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13335",
+        "gloss": "corn",
+        "label": 56,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13336",
+        "gloss": "corn",
+        "label": 56,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13698",
+        "gloss": "cow",
+        "label": 57,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13703",
+        "gloss": "cow",
+        "label": 57,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13708",
+        "gloss": "cow",
+        "label": 57,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13710",
+        "gloss": "cow",
+        "label": 57,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13696",
+        "gloss": "cow",
+        "label": 57,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68032",
+        "gloss": "dance",
+        "label": 58,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "14626",
+        "gloss": "dance",
+        "label": 58,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67550",
+        "gloss": "dance",
+        "label": 58,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "14632",
+        "gloss": "dance",
+        "label": 58,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "14673",
+        "gloss": "dark",
+        "label": 59,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "14682",
+        "gloss": "dark",
+        "label": 59,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "14683",
+        "gloss": "dark",
+        "label": 59,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "14685",
+        "gloss": "dark",
+        "label": 59,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "14672",
+        "gloss": "dark",
+        "label": 59,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17016",
+        "gloss": "doctor",
+        "label": 60,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17020",
+        "gloss": "doctor",
+        "label": 60,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17022",
+        "gloss": "doctor",
+        "label": 60,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67579",
+        "gloss": "doctor",
+        "label": 60,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17023",
+        "gloss": "doctor",
+        "label": 60,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "17024",
+        "gloss": "doctor",
+        "label": 60,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69307",
+        "gloss": "eat",
+        "label": 61,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "18326",
+        "gloss": "eat",
+        "label": 61,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "18323",
+        "gloss": "eat",
+        "label": 61,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67611",
+        "gloss": "eat",
+        "label": 61,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68344",
+        "gloss": "enjoy",
+        "label": 62,
+        "frame_start": 1,
+        "frame_end": 128
+    },
+    {
+        "video_id": "19262",
+        "gloss": "enjoy",
+        "label": 62,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "19257",
+        "gloss": "enjoy",
+        "label": 62,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "19267",
+        "gloss": "enjoy",
+        "label": 62,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65761",
+        "gloss": "forget",
+        "label": 63,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68053",
+        "gloss": "forget",
+        "label": 63,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "22954",
+        "gloss": "forget",
+        "label": 63,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "22962",
+        "gloss": "forget",
+        "label": 63,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "22964",
+        "gloss": "forget",
+        "label": 63,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "24658",
+        "gloss": "give",
+        "label": 64,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "24639",
+        "gloss": "give",
+        "label": 64,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "24641",
+        "gloss": "give",
+        "label": 64,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "24642",
+        "gloss": "give",
+        "label": 64,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "24636",
+        "gloss": "give",
+        "label": 64,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "24649",
+        "gloss": "give",
+        "label": 64,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32263",
+        "gloss": "last",
+        "label": 65,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32253",
+        "gloss": "last",
+        "label": 65,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32255",
+        "gloss": "last",
+        "label": 65,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32246",
+        "gloss": "last",
+        "label": 65,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67826",
+        "gloss": "last",
+        "label": 65,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32258",
+        "gloss": "last",
+        "label": 65,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68099",
+        "gloss": "meet",
+        "label": 66,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "35513",
+        "gloss": "meet",
+        "label": 66,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "66112",
+        "gloss": "meet",
+        "label": 66,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67886",
+        "gloss": "meet",
+        "label": 66,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68132",
+        "gloss": "pink",
+        "label": 67,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68398",
+        "gloss": "pink",
+        "label": 67,
+        "frame_start": 1,
+        "frame_end": 61
+    },
+    {
+        "video_id": "42833",
+        "gloss": "pink",
+        "label": 67,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "42840",
+        "gloss": "pink",
+        "label": 67,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "42841",
+        "gloss": "pink",
+        "label": 67,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "42842",
+        "gloss": "pink",
+        "label": 67,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69431",
+        "gloss": "pizza",
+        "label": 68,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "42976",
+        "gloss": "pizza",
+        "label": 68,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "42977",
+        "gloss": "pizza",
+        "label": 68,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "42960",
+        "gloss": "pizza",
+        "label": 68,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "42962",
+        "gloss": "pizza",
+        "label": 68,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69433",
+        "gloss": "play",
+        "label": 69,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "43166",
+        "gloss": "play",
+        "label": 69,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "43171",
+        "gloss": "play",
+        "label": 69,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "43176",
+        "gloss": "play",
+        "label": 69,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "43178",
+        "gloss": "play",
+        "label": 69,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69455",
+        "gloss": "school",
+        "label": 70,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68145",
+        "gloss": "school",
+        "label": 70,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67170",
+        "gloss": "school",
+        "label": 70,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "49606",
+        "gloss": "school",
+        "label": 70,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "50041",
+        "gloss": "secretary",
+        "label": 71,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67177",
+        "gloss": "secretary",
+        "label": 71,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "50050",
+        "gloss": "secretary",
+        "label": 71,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "50051",
+        "gloss": "secretary",
+        "label": 71,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "50052",
+        "gloss": "secretary",
+        "label": 71,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "51224",
+        "gloss": "short",
+        "label": 72,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "51227",
+        "gloss": "short",
+        "label": 72,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "51220",
+        "gloss": "short",
+        "label": 72,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "51230",
+        "gloss": "short",
+        "label": 72,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "51233",
+        "gloss": "short",
+        "label": 72,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "51234",
+        "gloss": "short",
+        "label": 72,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69511",
+        "gloss": "time",
+        "label": 73,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "58502",
+        "gloss": "time",
+        "label": 73,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "58497",
+        "gloss": "time",
+        "label": 73,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "58507",
+        "gloss": "time",
+        "label": 73,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69524",
+        "gloss": "want",
+        "label": 74,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "62247",
+        "gloss": "want",
+        "label": 74,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "62244",
+        "gloss": "want",
+        "label": 74,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "62254",
+        "gloss": "want",
+        "label": 74,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68924",
+        "gloss": "work",
+        "label": 75,
+        "frame_start": 1,
+        "frame_end": 62
+    },
+    {
+        "video_id": "63789",
+        "gloss": "work",
+        "label": 75,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "63795",
+        "gloss": "work",
+        "label": 75,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "63788",
+        "gloss": "work",
+        "label": 75,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "01386",
+        "gloss": "africa",
+        "label": 76,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "01391",
+        "gloss": "africa",
+        "label": 76,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "01394",
+        "gloss": "africa",
+        "label": 76,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "01397",
+        "gloss": "africa",
+        "label": 76,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "01398",
+        "gloss": "africa",
+        "label": 76,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69225",
+        "gloss": "basketball",
+        "label": 77,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "05232",
+        "gloss": "basketball",
+        "label": 77,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "05236",
+        "gloss": "basketball",
+        "label": 77,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "05239",
+        "gloss": "basketball",
+        "label": 77,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "06366",
+        "gloss": "birthday",
+        "label": 78,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "06369",
+        "gloss": "birthday",
+        "label": 78,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "06370",
+        "gloss": "birthday",
+        "label": 78,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "06360",
+        "gloss": "birthday",
+        "label": 78,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "06362",
+        "gloss": "birthday",
+        "label": 78,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69252",
+        "gloss": "brown",
+        "label": 79,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07964",
+        "gloss": "brown",
+        "label": 79,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07968",
+        "gloss": "brown",
+        "label": 79,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "07973",
+        "gloss": "brown",
+        "label": 79,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "08429",
+        "gloss": "but",
+        "label": 80,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "08432",
+        "gloss": "but",
+        "label": 80,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "08436",
+        "gloss": "but",
+        "label": 80,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "08425",
+        "gloss": "but",
+        "label": 80,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "08426",
+        "gloss": "but",
+        "label": 80,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65341",
+        "gloss": "cheat",
+        "label": 81,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "10151",
+        "gloss": "cheat",
+        "label": 81,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65342",
+        "gloss": "cheat",
+        "label": 81,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "67490",
+        "gloss": "cheat",
+        "label": 81,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "10156",
+        "gloss": "cheat",
+        "label": 81,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "10159",
+        "gloss": "cheat",
+        "label": 81,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69269",
+        "gloss": "city",
+        "label": 82,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "10898",
+        "gloss": "city",
+        "label": 82,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "10901",
+        "gloss": "city",
+        "label": 82,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "10904",
+        "gloss": "city",
+        "label": 82,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13159",
+        "gloss": "cook",
+        "label": 83,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13162",
+        "gloss": "cook",
+        "label": 83,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "13155",
+        "gloss": "cook",
+        "label": 83,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "15037",
+        "gloss": "decide",
+        "label": 84,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "15040",
+        "gloss": "decide",
+        "label": 84,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "15043",
+        "gloss": "decide",
+        "label": 84,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "65792",
+        "gloss": "full",
+        "label": 85,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "23775",
+        "gloss": "full",
+        "label": 85,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "23776",
+        "gloss": "full",
+        "label": 85,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "23778",
+        "gloss": "full",
+        "label": 85,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "23767",
+        "gloss": "full",
+        "label": 85,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69370",
+        "gloss": "how",
+        "label": 86,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68954",
+        "gloss": "how",
+        "label": 86,
+        "frame_start": 1,
+        "frame_end": 64
+    },
+    {
+        "video_id": "28206",
+        "gloss": "how",
+        "label": 86,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "28201",
+        "gloss": "how",
+        "label": 86,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "28203",
+        "gloss": "how",
+        "label": 86,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "30830",
+        "gloss": "jacket",
+        "label": 87,
+        "frame_start": 34,
+        "frame_end": 73
+    },
+    {
+        "video_id": "68320",
+        "gloss": "jacket",
+        "label": 87,
+        "frame_start": 1,
+        "frame_end": 49
+    },
+    {
+        "video_id": "30849",
+        "gloss": "jacket",
+        "label": 87,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "30833",
+        "gloss": "jacket",
+        "label": 87,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "30841",
+        "gloss": "jacket",
+        "label": 87,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68636",
+        "gloss": "letter",
+        "label": 88,
+        "frame_start": 1,
+        "frame_end": 46
+    },
+    {
+        "video_id": "68089",
+        "gloss": "letter",
+        "label": 88,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32948",
+        "gloss": "letter",
+        "label": 88,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32950",
+        "gloss": "letter",
+        "label": 88,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "32956",
+        "gloss": "letter",
+        "label": 88,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "66111",
+        "gloss": "medicine",
+        "label": 89,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68810",
+        "gloss": "medicine",
+        "label": 89,
+        "frame_start": 1,
+        "frame_end": 102
+    },
+    {
+        "video_id": "35457",
+        "gloss": "medicine",
+        "label": 89,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "35461",
+        "gloss": "medicine",
+        "label": 89,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "35466",
+        "gloss": "medicine",
+        "label": 89,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "37887",
+        "gloss": "need",
+        "label": 90,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "37890",
+        "gloss": "need",
+        "label": 90,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "37882",
+        "gloss": "need",
+        "label": 90,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68364",
+        "gloss": "paint",
+        "label": 91,
+        "frame_start": 1,
+        "frame_end": 91
+    },
+    {
+        "video_id": "40840",
+        "gloss": "paint",
+        "label": 91,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "40843",
+        "gloss": "paint",
+        "label": 91,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "40835",
+        "gloss": "paint",
+        "label": 91,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68446",
+        "gloss": "paper",
+        "label": 92,
+        "frame_start": 1,
+        "frame_end": 56
+    },
+    {
+        "video_id": "41031",
+        "gloss": "paper",
+        "label": 92,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "41034",
+        "gloss": "paper",
+        "label": 92,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "41027",
+        "gloss": "paper",
+        "label": 92,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69439",
+        "gloss": "pull",
+        "label": 93,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "45267",
+        "gloss": "pull",
+        "label": 93,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "45270",
+        "gloss": "pull",
+        "label": 93,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "45262",
+        "gloss": "pull",
+        "label": 93,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "69440",
+        "gloss": "purple",
+        "label": 94,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "45438",
+        "gloss": "purple",
+        "label": 94,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "45441",
+        "gloss": "purple",
+        "label": 94,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "45435",
+        "gloss": "purple",
+        "label": 94,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "48123",
+        "gloss": "right",
+        "label": 95,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "48124",
+        "gloss": "right",
+        "label": 95,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "48126",
+        "gloss": "right",
+        "label": 95,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "48108",
+        "gloss": "right",
+        "label": 95,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "48112",
+        "gloss": "right",
+        "label": 95,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "48115",
+        "gloss": "right",
+        "label": 95,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "49173",
+        "gloss": "same",
+        "label": 96,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "49176",
+        "gloss": "same",
+        "label": 96,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "49179",
+        "gloss": "same",
+        "label": 96,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "49180",
+        "gloss": "same",
+        "label": 96,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "49182",
+        "gloss": "same",
+        "label": 96,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "49187",
+        "gloss": "same",
+        "label": 96,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "68336",
+        "gloss": "son",
+        "label": 97,
+        "frame_start": 1,
+        "frame_end": 57
+    },
+    {
+        "video_id": "53274",
+        "gloss": "son",
+        "label": 97,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "53277",
+        "gloss": "son",
+        "label": 97,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "53269",
+        "gloss": "son",
+        "label": 97,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57278",
+        "gloss": "tell",
+        "label": 98,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57282",
+        "gloss": "tell",
+        "label": 98,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57285",
+        "gloss": "tell",
+        "label": 98,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "57290",
+        "gloss": "tell",
+        "label": 98,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "58365",
+        "gloss": "thursday",
+        "label": 99,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "58368",
+        "gloss": "thursday",
+        "label": 99,
+        "frame_start": 1,
+        "frame_end": -1
+    },
+    {
+        "video_id": "58370",
+        "gloss": "thursday",
+        "label": 99,
+        "frame_start": 1,
+        "frame_end": -1
+    }
+]
