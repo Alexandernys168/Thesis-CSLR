@@ -5,7 +5,7 @@ import random
 import numpy as np
 from torch.utils.data import Dataset
 import torchvision.transforms.functional as F
-from config import CONFIG
+from ASL.model_and_config.config import CONFIG
 import torchvision.transforms as transforms
 
 class FastWLASLDataset(Dataset):

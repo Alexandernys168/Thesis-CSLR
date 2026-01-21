@@ -166,7 +166,7 @@ def get_model(config):
     model_type = config.get('model_type', 'r3d_18')
     
     # I3D Imports
-    from models_i3d import InceptionI3d, TwoStreamI3D
+    from ASL.model_and_config.models_i3d import InceptionI3d, TwoStreamI3D
     
     if model_type == 'r3d_18':
         model = BaselineResNet3D(

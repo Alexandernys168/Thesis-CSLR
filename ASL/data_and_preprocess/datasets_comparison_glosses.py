@@ -1,31 +1,49 @@
 import json
+import csv
+import re
+import os
 from collections import Counter
 
-def filter_and_intersect(how2sign_path, wlasl_path, min_freq=10, max_len=17):
+def filter_and_intersect(how2sign_path, wlasl_path, wlasl_class_list_path, min_freq=10, max_len=17):
     # ---------------------------------------------------------
-    # 1. LOAD DATA
+    # 1. LOAD WLASL DATA (Indices and Counts)
     # ---------------------------------------------------------
-    print("Loading datasets...")
+    print("Loading WLASL data...")
     
-    # Load WLASL (Assuming standard JSON format)
-    # Load WLASL (Supports JSON or TXT)
+    # 1a. Load Class List (Gloss -> Index)
+    wlasl_indices = {}
+    try:
+        with open(wlasl_class_list_path, 'r') as f:
+            for line in f:
+                parts = line.strip().split('\t')
+                if len(parts) >= 2:
+                    idx, gloss = parts[0], parts[1]
+                    wlasl_indices[gloss.upper()] = idx
+        print(f"Loaded {len(wlasl_indices)} classes from {wlasl_class_list_path}")
+    except FileNotFoundError:
+        print(f"Error: Could not find WLASL class list at {wlasl_class_list_path}")
+        return
+
+    # 1b. Load WLASL JSON (Gloss -> Count)
+    wlasl_counts = {}
+    wlasl_glosses = set()
+    
     try:
         if wlasl_path.endswith('.json'):
             with open(wlasl_path, 'r') as f:
                 wlasl_data = json.load(f)
-                # Check structure: List of dicts with 'gloss' key (WLASL v0.3)
-                if isinstance(wlasl_data, list) and len(wlasl_data) > 0 and 'gloss' in wlasl_data[0]:
-                    wlasl_glosses = set(entry['gloss'].upper() for entry in wlasl_data)
-                else:
-                    # Fallback: Maybe it's a simple list of strings in JSON?
-                    # Or a dict? Adapt as needed.
-                    print("Warning: Unknown JSON format. Assuming list of entries with 'gloss' key.")
-                    wlasl_glosses = set(str(entry).upper() for entry in wlasl_data)
-        else:
-            # Assume Text File (One gloss per line)
-            with open(wlasl_path, 'r') as f:
-                wlasl_glosses = set(line.strip().upper() for line in f if line.strip())
                 
+                if isinstance(wlasl_data, list):
+                    for entry in wlasl_data:
+                        if 'gloss' in entry:
+                            g = entry['gloss'].upper()
+                            count = len(entry.get('instances', []))
+                            wlasl_counts[g] = count
+                            wlasl_glosses.add(g)
+        else:
+            print(f"Error: WLASL path must be a JSON file to count instances: {wlasl_path}")
+            return
+            
     except FileNotFoundError:
         print(f"Error: Could not find WLASL file at {wlasl_path}")
         return
@@ -33,70 +51,92 @@ def filter_and_intersect(how2sign_path, wlasl_path, min_freq=10, max_len=17):
         print(f"Error: Failed to decode WLASL JSON file at {wlasl_path}")
         return
 
-    import csv
-    import re
+    print(f"Loaded {len(wlasl_glosses)} glosses from WLASL JSON.")
+
+    # ---------------------------------------------------------
+    # 2. LOAD HOW2SIGN DATA (Preserving Columns)
+    # ---------------------------------------------------------
+    print("Loading How2Sign data...")
     
-    # Load How2Sign (Assuming CSV with SENTENCE column at end or specific index)
-    how2sign_sentences = []
+    how2sign_rows = []
+    how2sign_header = []
+    
+    all_tokens = [] # For frequency calculation
+    
     try:
         with open(how2sign_path, 'r', encoding='utf-8') as f:
-            # Check if it looks like a CSV
-            if how2sign_path.endswith('.csv'):
-                reader = csv.reader(f)
-                header = next(reader, None) # Skip header
-                # Column 6 seems to be SENTENCE in the provided view (0-indexed)
-                # VIDEO_ID,VIDEO_NAME,SENTENCE_ID,SENTENCE_NAME,START,END,SENTENCE
-                target_col = -1 
+            # Assuming TSV based on filename in example or CSV. 
+            # The prompt implies CSV columns. Let's try CSV sniffer or assume delimiter.
+            # Example in previous code used csv.reader default (comma).
+            # If it fails, might need delimiter='\t'.
+            
+            # Let's verify delimiter quickly by peeking or just try default first.
+            # Given previous code used csv.reader(f) without delimiter, we assume comma.
+            
+            reader = csv.reader(f)
+            how2sign_header = next(reader, None)
+            
+            # Find the SENTENCE column.
+            # Previous code found it at -1 or col 6. 
+            # Let's search for header "SENTENCE"
+            sentence_col_idx = -1
+            if how2sign_header:
+                # Try to find 'SENTENCE' exact match first
+                for i, h in enumerate(how2sign_header):
+                    if h.strip().upper() == 'SENTENCE':
+                        sentence_col_idx = i
+                        break
                 
-                for row in reader:
-                    if len(row) > 0:
-                        sentence = row[-1] # Assuming last column
-                        # Clean punctuation: Keep only alphanumeric and spaces
-                        sentence = re.sub(r'[^\w\s]', '', sentence)
-                        how2sign_sentences.append(sentence.upper())
-            else:
-                # Fallback to line based
-                for line in f:
-                    if line.strip():
-                        # Clean punctuation
-                        line = re.sub(r'[^\w\s]', '', line)
-                        how2sign_sentences.append(line.strip().upper())
-                        
+                # If not found, try partial as fallback but be careful
+                if sentence_col_idx == -1:
+                     for i, h in enumerate(how2sign_header):
+                        if 'SENTENCE' in h.upper() and 'ID' not in h.upper() and 'NAME' not in h.upper():
+                            sentence_col_idx = i
+                            break
+
+            
+            if sentence_col_idx == -1:
+                # Fallback to last column as per previous logic logic if not found
+                sentence_col_idx = len(how2sign_header) - 1 if how2sign_header else -1
+                print(f"Warning: 'SENTENCE' column not found in header. Using column index {sentence_col_idx}.")
+
+            for row in reader:
+                if len(row) > sentence_col_idx:
+                    sentence = row[sentence_col_idx]
+                    # Clean punctuation for tokenization
+                    clean_sentence = re.sub(r'[^\w\s]', '', sentence).upper()
+                    tokens = clean_sentence.split()
+                    
+                    how2sign_rows.append({
+                        'original_row': row,
+                        'tokens': tokens,
+                        'clean_sentence': clean_sentence
+                    })
+                    all_tokens.extend(tokens)
+                    
     except FileNotFoundError:
         print(f"Error: Could not find How2Sign file at {how2sign_path}")
         return
-    except Exception as e:
-        print(f"Error reading How2Sign file: {e}")
-        return
 
-    print(f"Total How2Sign sentences loaded: {len(how2sign_sentences)}")
-    if len(how2sign_sentences) > 0:
-        print(f"Sample sentence: {how2sign_sentences[0]}")
+    print(f"Total How2Sign sentences loaded: {len(how2sign_rows)}")
 
     # ---------------------------------------------------------
-    # 2. CALCULATE GLOBAL WORD FREQUENCIES
+    # 3. CALCULATE GLOBAL WORD FREQUENCIES (How2Sign)
     # ---------------------------------------------------------
-    # We need to know token frequency across the WHOLE dataset first
-    all_tokens = []
-    for sentence in how2sign_sentences:
-        tokens = sentence.split()
-        all_tokens.extend(tokens)
-    
     word_counts = Counter(all_tokens)
-    print(f"Total unique glosses found: {len(word_counts)}")
-    print(f"Most common words: {word_counts.most_common(5)}")
+    print(f"Total unique glosses found in How2Sign: {len(word_counts)}")
 
     # ---------------------------------------------------------
-    # 3. APPLY FILTERS (Length < 17 AND High Frequency)
+    # 4. APPLY FILTERS
     # ---------------------------------------------------------
-    filtered_sentences = []
+    filtered_rows = []
     target_glosses = set()
     
     dropped_len = 0
     dropped_freq = 0
     
-    for sentence in how2sign_sentences:
-        tokens = sentence.split()
+    for item in how2sign_rows:
+        tokens = item['tokens']
         
         # Criteria 1: Length check
         if len(tokens) >= max_len:
@@ -104,9 +144,8 @@ def filter_and_intersect(how2sign_path, wlasl_path, min_freq=10, max_len=17):
             continue
             
         # Criteria 2: Frequency check
-        # We only keep the sentence if ALL its words appear >= min_freq times globally.
         if all(word_counts[t] >= min_freq for t in tokens):
-            filtered_sentences.append(sentence)
+            filtered_rows.append(item['original_row'])
             target_glosses.update(tokens)
         else:
             dropped_freq += 1
@@ -114,37 +153,67 @@ def filter_and_intersect(how2sign_path, wlasl_path, min_freq=10, max_len=17):
     print(f"\n--- FILTER RESULTS ---")
     print(f"Sentences dropped due to length (>={max_len}): {dropped_len}")
     print(f"Sentences dropped due to frequency (<{min_freq} occurrences): {dropped_freq}")
-    print(f"Sentences remaining after filtering: {len(filtered_sentences)}")
-    print(f"Unique glosses in these sentences: {len(target_glosses)}")
+    print(f"Sentences remaining: {len(filtered_rows)}")
+    print(f"Unique glosses in filtered set: {len(target_glosses)}")
 
     # ---------------------------------------------------------
-    # 4. INTERSECT WITH WLASL
+    # 5. INTERSECT WITH WLASL
     # ---------------------------------------------------------
-    # Which of our target glosses are actually in WLASL?
+    # Glosses that are in How2Sign filtered set AND in WLASL
     available_in_wlasl = target_glosses.intersection(wlasl_glosses)
     missing_from_wlasl = target_glosses - wlasl_glosses
 
     print(f"\n--- WLASL INTERSECTION ---")
     print(f"Glosses present in WLASL: {len(available_in_wlasl)}")
     print(f"Glosses MISSING from WLASL: {len(missing_from_wlasl)}")
+
+    # ---------------------------------------------------------
+    # 6. OUTPUT RESULTS
+    # ---------------------------------------------------------
+    print("\n--- SAVING RESULTS ---")
     
-    # ---------------------------------------------------------
-    # 5. OUTPUT RECOMMENDATION
-    # ---------------------------------------------------------
-    print("\n--- RECOMMENDATION ---")
     if len(available_in_wlasl) > 0:
-        print(f"You should pre-train on the {len(available_in_wlasl)} WLASL classes found.")
-        print("Saving these classes to 'target_wlasl_subset.txt'...")
-        with open('target_wlasl_subset.txt', 'w') as f:
+        # A. Save WLASL Subset CSV
+        wlasl_output_file = 'filtered_wlasl_selected.csv'
+        print(f"Saving WLASL subset to '{wlasl_output_file}'...")
+        
+        with open(wlasl_output_file, 'w', newline='') as f:
+            writer = csv.writer(f)
+            # Header: Gloss, Index (from class list), Count (from JSON)
+            writer.writerow(['gloss', 'index', 'wlasl_count'])
+            
             for gloss in sorted(list(available_in_wlasl)):
-                f.write(f"{gloss}\n")
+                # Get index, default to -1 if not in class list (though it should be if consistent)
+                idx = wlasl_indices.get(gloss, "N/A")
+                cnt = wlasl_counts.get(gloss, 0)
+                writer.writerow([gloss, idx, cnt])
+
+        # B. Save Filtered How2Sign CSV
+        how2sign_output_file = 'filtered_how2sign.csv'
+        print(f"Saving filtered How2Sign sentences to '{how2sign_output_file}'...")
+        
+        with open(how2sign_output_file, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            if how2sign_header:
+                writer.writerow(how2sign_header)
+            
+            for row in filtered_rows:
+                writer.writerow(row)
                 
-        print("Saving filtered sentences to 'filtered_how2sign.txt'...")
-        with open('filtered_how2sign.txt', 'w') as f:
-            for sent in filtered_sentences:
-                f.write(f"{sent}\n")
     else:
-        print("Warning: No intersection found. Check your normalization (uppercase/lowercase).")
+        print("Warning: No intersection found. No files saved.")
 
 # Example Usage:
-filter_and_intersect('C:/Thesis/Thesis-CSLR/How2Sign/how2sign_train - how2sign_train.csv', 'Thesis-CSLR/ASL/1/wlasl-complete/WLASL_v0.3.json')
+# Adjust paths as needed
+if __name__ == "__main__":
+    # You can update these default paths or pass them via command line args if you extend this script
+    h2s_path = 'How2Sign/how2sign_train - how2sign_train.csv'
+    wlasl_json_path = 'ASL/1/wlasl-complete/WLASL_v0.3.json'
+    wlasl_class_path = 'ASL/1/wlasl-complete/wlasl_class_list.txt'
+    
+    # Check if files exist before running default
+    if os.path.exists(h2s_path) and os.path.exists(wlasl_json_path) and os.path.exists(wlasl_class_path):
+        filter_and_intersect(h2s_path, wlasl_json_path, wlasl_class_path)
+    else:
+        # For the user, I'll print a message or they can import the function
+        print("Note: Default file paths in __main__ may need adjustment based on your CWD.")

@@ -1,18 +1,24 @@
+import sys
 import os
 import time
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
-from torch.utils.data import DataLoader
 from tqdm import tqdm
 from torch.cuda.amp import GradScaler
 
+# Ensure the root directory (Thesis-CSLR) is in sys.path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.abspath(os.path.join(current_dir, "..", ".."))
+if project_root not in sys.path:
+    sys.path.append(project_root)
+
 # Modular Imports
-from config import CONFIG
-from logger import ExperimentLogger
-from dataset import FastWLASLDataset
-from models import get_model
+from ASL.model_and_config.config import CONFIG
+from ASL.logger import ExperimentLogger
+from ASL.data_and_preprocess.dataset import FastWLASLDataset
+from ASL.model_and_config.models import get_model
 
 
 
