@@ -31,8 +31,11 @@ CONFIG = {
     "aug_prob_flip": 0.5,
     "aug_prob_crop": 1.0, # Always random crop during training if augment=True
     "aug_color_jitter": True,
+    "aug_rotation_range": 15,
+    "aug_erase_prob": 0.2,
     
     # Training Hyperparameters
+    "use_lr_scheduler": True,
     "batch_size": 7, # Keep low for VRAM, but accumulation handles effective batch
     "epochs": 50,
     "learning_rate": 1e-4,
@@ -42,7 +45,7 @@ CONFIG = {
     "early_stopping_min_delta": 0.001,
     
     # Run Metadata
-    "config_id": "2dcnn_lstm_augmentations_no_hand_crop_v1", # Tag for the experiment log
+    "config_id": "2dcnn_lstm_hard_augmentations_no_hand_crop_v1", # Tag for the experiment log
 }
 
 # Ensure directories exist

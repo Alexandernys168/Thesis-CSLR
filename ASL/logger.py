@@ -14,7 +14,8 @@ class ExperimentLogger:
             "Train_Acc", 
             "Val_Loss", 
             "Val_Acc", 
-            "Best_Val_Acc"
+            "Best_Val_Acc",
+            "Learning_Rate"
         ]
         self._initialize_log()
 
@@ -25,7 +26,7 @@ class ExperimentLogger:
                 writer = csv.writer(f)
                 writer.writerow(self.headers)
 
-    def log_epoch(self, config, epoch, train_stats, val_stats, best_val_acc):
+    def log_epoch(self, config, epoch, train_stats, val_stats, best_val_acc, current_lr):
         """
         Logs a single epoch's results.
         
@@ -35,6 +36,7 @@ class ExperimentLogger:
             train_stats (tuple): (train_loss, train_acc)
             val_stats (tuple): (val_loss, val_acc)
             best_val_acc (float): Current best validation accuracy.
+            current_lr (float): Current learning rate.
         """
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
@@ -47,7 +49,8 @@ class ExperimentLogger:
             f"{train_stats[1]:.4f}",
             f"{val_stats[0]:.4f}",
             f"{val_stats[1]:.4f}",
-            f"{best_val_acc:.4f}"
+            f"{best_val_acc:.4f}",
+            f"{current_lr:.6f}"
         ]
         
         try:
@@ -57,6 +60,25 @@ class ExperimentLogger:
             print(f"Logged epoch {epoch+1} to {self.log_file}")
         except Exception as e:
             print(f"Failed to write to log file: {e}")
+
+    def save_config_snapshot(self, config):
+        """
+        Saves the config dictionary as a JSON file in the checkpoint directory.
+        """
+        import json
+        
+        config_id = config.get("config_id", "default")
+        checkpoint_dir = config.get("checkpoint_dir", ".")
+        
+        filename = f"config_snapshot_{config_id}.json"
+        filepath = os.path.join(checkpoint_dir, filename)
+        
+        try:
+            with open(filepath, 'w') as f:
+                json.dump(config, f, indent=4)
+            print(f"Configuration snapshot saved to {filepath}")
+        except Exception as e:
+            print(f"Failed to save config snapshot: {e}")
 
 # Simple test if run directly
 if __name__ == "__main__":

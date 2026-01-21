@@ -91,6 +91,9 @@ def main():
     # Setup Logger
     logger = ExperimentLogger(CONFIG['log_file'])
     
+    # Requirement 2: Save Config Snapshot
+    logger.save_config_snapshot(CONFIG)
+    
     # Setup Dataset
     # Verify Tensor Dir
     if not os.path.exists(CONFIG['tensor_dir']):
@@ -103,9 +106,19 @@ def main():
 
     print("Loading Datasets...")
     # Train: Augmentations ON (if enabled in config)
-    train_ds = FastWLASLDataset(CONFIG['train_json'], CONFIG['tensor_dir'], augment=CONFIG['augment'])
+    train_ds = FastWLASLDataset(
+        CONFIG['train_json'], 
+        CONFIG['tensor_dir'], 
+        augment=CONFIG['augment'],
+        num_classes=CONFIG.get('num_classes')
+    )
     # Val: Augmentations OFF
-    val_ds = FastWLASLDataset(CONFIG['val_json'], CONFIG['tensor_dir'], augment=False)
+    val_ds = FastWLASLDataset(
+        CONFIG['val_json'], 
+        CONFIG['tensor_dir'], 
+        augment=False,
+        num_classes=CONFIG.get('num_classes')
+    )
     
     # Docker / AWS Optimization
     in_docker = os.environ.get("AM_I_IN_A_DOCKER_CONTAINER", "false").lower() == "true"
@@ -150,6 +163,18 @@ def main():
     )
     scaler = torch.amp.GradScaler('cuda')
     
+    # Requirement 1: Adaptive Learning Rate Scheduler
+    scheduler = None
+    if CONFIG.get("use_lr_scheduler", False):
+        scheduler = optim.lr_scheduler.ReduceLROnPlateau(
+            optimizer, 
+            mode='min', 
+            factor=0.5, 
+            patience=3,  
+            min_lr=1e-6
+        )
+        print("Initialized ReduceLROnPlateau scheduler.")
+    
     # Loop
     best_acc = 0.0
     
@@ -164,8 +189,15 @@ def main():
         train_loss, train_acc = train_one_epoch(model, train_loader, criterion, optimizer, scaler, device, epoch)
         val_loss, val_acc = validate(model, val_loader, criterion, device, epoch)
         
+        # Scheduler Step
+        current_lr = optimizer.param_groups[0]['lr']
+        if scheduler is not None:
+             scheduler.step(val_loss)
+             # Update current_lr in case it changed
+             current_lr = optimizer.param_groups[0]['lr']
+
         # Logging
-        logger.log_epoch(CONFIG, epoch, (train_loss, train_acc), (val_loss, val_acc), best_acc)
+        logger.log_epoch(CONFIG, epoch, (train_loss, train_acc), (val_loss, val_acc), best_acc, current_lr)
         
         print(f"Summary Ep {epoch+1}: Train Loss {train_loss:.4f} Acc {train_acc:.4f} | Val Loss {val_loss:.4f} Acc {val_acc:.4f}")
         

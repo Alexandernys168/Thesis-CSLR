@@ -9,7 +9,7 @@ from config import CONFIG
 import torchvision.transforms as transforms
 
 class FastWLASLDataset(Dataset):
-    def __init__(self, json_path, tensor_dir, augment=False):
+    def __init__(self, json_path, tensor_dir, augment=False, num_classes=None):
         self.tensor_dir = tensor_dir
         self.augment = augment
         self.load_mode = CONFIG.get("load_mode", "preprocessed")
@@ -21,6 +21,13 @@ class FastWLASLDataset(Dataset):
         with open(json_path, 'r') as f:
             self.data = json.load(f)
             
+        # Requirement 1: Dynamic Class Filtering
+        if num_classes is not None:
+            original_count = len(self.data)
+            # Filter logic: Keep samples where label < num_classes
+            self.data = [d for d in self.data if d['label'] < num_classes]
+            print(f"Filtered dataset from {original_count} total samples to {len(self.data)} samples (Classes 0 to {num_classes-1}).")
+            
     def __len__(self):
         return len(self.data)
         
@@ -28,12 +35,36 @@ class FastWLASLDataset(Dataset):
         """Applies consistent spatial/color augmentations."""
         # Input: (C, T, H, W)
         
-        # 1. Random Horizontal Flip (p=0.5)
+        # 1. Temporal Sub-sampling (If we have more frames than needed)
+        # Note: In 'preprocessed' mode, we usually have exactly frames_per_clip.
+        # But if 'on_the_fly' or if preprocessing stored more frames, we can sub-sample.
+        c, t, h, w = video_tensor.shape
+        target_frames = CONFIG.get("frames_per_clip", 64)
+        
+        if self.augment and t > target_frames:
+             # Random start index
+             start_idx = random.randint(0, t - target_frames)
+             video_tensor = video_tensor[:, start_idx:start_idx+target_frames, :, :]
+        elif t > target_frames:
+             # Center crop temporally for validation
+             start_idx = (t - target_frames) // 2
+             video_tensor = video_tensor[:, start_idx:start_idx+target_frames, :, :]
+
+        # Update t after temporal crop
+        c, t, h, w = video_tensor.shape
+        
+        # 2. Random Horizontal Flip (p=0.5)
         if random.random() < 0.5:
              video_tensor = torch.flip(video_tensor, [-1])
 
-        # 2. Random Crop (or Center Crop)
-        c, t, h, w = video_tensor.shape
+        # 3. Random Rotation (-15 to 15 degrees)
+        rot_range = CONFIG.get("aug_rotation_range", 15)
+        if self.augment and rot_range > 0:
+             angle = random.uniform(-rot_range, rot_range)
+             # Rotate all frames by the same angle
+             video_tensor = F.rotate(video_tensor, angle) # F.rotate handles (..., H, W)
+
+        # 4. Random Crop (or Center Crop)
         th, tw = CONFIG.get("crop_size", 224), CONFIG.get("crop_size", 224)
         
         if self.augment:
@@ -46,6 +77,31 @@ class FastWLASLDataset(Dataset):
             
         video_tensor = video_tensor[..., i:i+th, j:j+tw]
         
+        # 5. Random Erasing (Cutout)
+        erase_prob = CONFIG.get("aug_erase_prob", 0.2)
+        if self.augment and random.random() < erase_prob:
+             # Erase a compatible rectangle on all frames
+             # Scale: proportion of image area to erase
+             scale = (0.02, 0.33)
+             ratio = (0.3, 3.3)
+             
+             # Need to manually implement since torchvision.transforms.RandomErasing expects (C, H, W) 
+             # and we want consistent erasing across T
+             
+             area = th * tw
+             target_area = random.uniform(*scale) * area
+             aspect_ratio = random.uniform(*ratio)
+             
+             h_rect = int(round(np.sqrt(target_area * aspect_ratio)))
+             w_rect = int(round(np.sqrt(target_area / aspect_ratio)))
+             
+             if h_rect < th and w_rect < tw:
+                 top = random.randint(0, th - h_rect)
+                 left = random.randint(0, tw - w_rect)
+                 
+                 # Set region to 0 (Black)
+                 video_tensor[..., top:top+h_rect, left:left+w_rect] = 0.0
+
         return video_tensor
 
     def _load_video_on_the_fly(self, video_id):
