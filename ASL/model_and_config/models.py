@@ -165,9 +165,6 @@ def get_model(config):
     """
     model_type = config.get('model_type', 'r3d_18')
     
-    # I3D Imports
-    from ASL.model_and_config.models_i3d import InceptionI3d, TwoStreamI3D
-    
     if model_type == 'r3d_18':
         model = BaselineResNet3D(
             num_classes=config['num_classes'],
@@ -188,23 +185,6 @@ def get_model(config):
             hidden_size=config.get('lstm_hidden_size', 256),
             num_layers=config.get('lstm_layers', 2),
             pretrained=config['pretrained'],
-            dropout_prob=config['dropout_prob']
-        )
-    elif model_type == 'i3d_rgb':
-        model = InceptionI3d(
-            num_classes=config['num_classes'],
-            in_channels=3,
-            dropout_keep_prob=config['dropout_prob']
-        )
-    elif model_type == 'i3d_flow':
-        model = InceptionI3d(
-            num_classes=config['num_classes'],
-            in_channels=2,
-            dropout_keep_prob=config['dropout_prob']
-        )
-    elif model_type == 'i3d_two_stream':
-        model = TwoStreamI3D(
-            num_classes=config['num_classes'],
             dropout_prob=config['dropout_prob']
         )
     else:

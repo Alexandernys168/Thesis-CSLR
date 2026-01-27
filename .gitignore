@@ -10,8 +10,10 @@ ASL/data_tensors
 
 ASL/tensors_hand_crop
 
+ASL/data_tensors_1000
+
 *.mp4
 
 *.pth
 
-
+*.pt

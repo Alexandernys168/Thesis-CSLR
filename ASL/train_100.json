@@ -35,6 +35,13 @@
         "frame_end": -1
     },
     {
+        "video_id": "70266",
+        "gloss": "book",
+        "label": 0,
+        "frame_start": 3732,
+        "frame_end": 3852
+    },
+    {
         "video_id": "07085",
         "gloss": "book",
         "label": 0,
@@ -518,6 +525,20 @@
         "frame_end": -1
     },
     {
+        "video_id": "05724",
+        "gloss": "before",
+        "label": 3,
+        "frame_start": 1733,
+        "frame_end": 1779
+    },
+    {
+        "video_id": "70348",
+        "gloss": "before",
+        "label": 3,
+        "frame_start": 4778,
+        "frame_end": 4873
+    },
+    {
         "video_id": "68007",
         "gloss": "before",
         "label": 3,
@@ -630,11 +651,25 @@
         "frame_end": -1
     },
     {
+        "video_id": "70230",
+        "gloss": "chair",
+        "label": 4,
+        "frame_start": 2101,
+        "frame_end": 2231
+    },
+    {
         "video_id": "68580",
         "gloss": "chair",
         "label": 4,
         "frame_start": 1,
         "frame_end": 51
+    },
+    {
+        "video_id": "70263",
+        "gloss": "chair",
+        "label": 4,
+        "frame_start": 3092,
+        "frame_end": 3209
     },
     {
         "video_id": "68019",
@@ -1134,11 +1169,25 @@
         "frame_end": -1
     },
     {
+        "video_id": "08909",
+        "gloss": "candy",
+        "label": 8,
+        "frame_start": 730,
+        "frame_end": 782
+    },
+    {
         "video_id": "68018",
         "gloss": "candy",
         "label": 8,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70326",
+        "gloss": "candy",
+        "label": 8,
+        "frame_start": 5286,
+        "frame_end": 5411
     },
     {
         "video_id": "68790",
@@ -1237,6 +1286,13 @@
         "label": 8,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70332",
+        "gloss": "cousin",
+        "label": 9,
+        "frame_start": 1161,
+        "frame_end": 1262
     },
     {
         "video_id": "68592",
@@ -1342,6 +1398,20 @@
         "label": 9,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70015",
+        "gloss": "deaf",
+        "label": 10,
+        "frame_start": 4420,
+        "frame_end": 4511
+    },
+    {
+        "video_id": "68586",
+        "gloss": "deaf",
+        "label": 10,
+        "frame_start": 80,
+        "frame_end": 137
     },
     {
         "video_id": "68033",
@@ -1757,6 +1827,13 @@
         "frame_end": -1
     },
     {
+        "video_id": "57919",
+        "gloss": "thin",
+        "label": 14,
+        "frame_start": 2147,
+        "frame_end": 2196
+    },
+    {
         "video_id": "57949",
         "gloss": "thin",
         "label": 14,
@@ -1958,6 +2035,13 @@
         "label": 15,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70306",
+        "gloss": "year",
+        "label": 16,
+        "frame_start": 860,
+        "frame_end": 989
     },
     {
         "video_id": "68992",
@@ -2259,6 +2343,13 @@
         "label": 18,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70244",
+        "gloss": "black",
+        "label": 19,
+        "frame_start": 1146,
+        "frame_end": 1241
     },
     {
         "video_id": "06472",
@@ -2667,6 +2758,13 @@
         "frame_end": -1
     },
     {
+        "video_id": "70299",
+        "gloss": "like",
+        "label": 23,
+        "frame_start": 5546,
+        "frame_end": 5667
+    },
+    {
         "video_id": "33285",
         "gloss": "like",
         "label": 23,
@@ -2961,6 +3059,13 @@
         "frame_end": -1
     },
     {
+        "video_id": "70345",
+        "gloss": "now",
+        "label": 26,
+        "frame_start": 4000,
+        "frame_end": 4107
+    },
+    {
         "video_id": "68694",
         "gloss": "now",
         "label": 26,
@@ -3057,6 +3162,13 @@
         "label": 26,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70249",
+        "gloss": "orange",
+        "label": 27,
+        "frame_start": 1858,
+        "frame_end": 1971
     },
     {
         "video_id": "68122",
@@ -3990,6 +4102,13 @@
         "frame_end": -1
     },
     {
+        "video_id": "17076",
+        "gloss": "dog",
+        "label": 36,
+        "frame_start": 3933,
+        "frame_end": 3995
+    },
+    {
         "video_id": "69298",
         "gloss": "dog",
         "label": 36,
@@ -4683,6 +4802,13 @@
         "frame_end": -1
     },
     {
+        "video_id": "32146",
+        "gloss": "language",
+        "label": 43,
+        "frame_start": 98,
+        "frame_end": 124
+    },
+    {
         "video_id": "68084",
         "gloss": "language",
         "label": 43,
@@ -4765,6 +4891,13 @@
         "label": 43,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "32319",
+        "gloss": "later",
+        "label": 44,
+        "frame_start": 378,
+        "frame_end": 410
     },
     {
         "video_id": "32335",
@@ -4961,6 +5094,13 @@
         "label": 45,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "51054",
+        "gloss": "shirt",
+        "label": 46,
+        "frame_start": 3441,
+        "frame_end": 3497
     },
     {
         "video_id": "68928",
@@ -5264,6 +5404,13 @@
         "frame_end": -1
     },
     {
+        "video_id": "70245",
+        "gloss": "white",
+        "label": 49,
+        "frame_start": 1285,
+        "frame_end": 1384
+    },
+    {
         "video_id": "63204",
         "gloss": "white",
         "label": 49,
@@ -5346,6 +5493,20 @@
         "label": 49,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70296",
+        "gloss": "wrong",
+        "label": 50,
+        "frame_start": 4359,
+        "frame_end": 4470
+    },
+    {
+        "video_id": "70132",
+        "gloss": "wrong",
+        "label": 50,
+        "frame_start": 1683,
+        "frame_end": 1814
     },
     {
         "video_id": "64087",
@@ -5437,6 +5598,13 @@
         "label": 50,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "00618",
+        "gloss": "accident",
+        "label": 51,
+        "frame_start": 374,
+        "frame_end": 400
     },
     {
         "video_id": "00639",
@@ -5537,6 +5705,13 @@
         "frame_end": 59
     },
     {
+        "video_id": "70309",
+        "gloss": "apple",
+        "label": 52,
+        "frame_start": 1682,
+        "frame_end": 1790
+    },
+    {
         "video_id": "03005",
         "gloss": "apple",
         "label": 52,
@@ -5612,6 +5787,13 @@
         "label": 52,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70107",
+        "gloss": "bird",
+        "label": 53,
+        "frame_start": 830,
+        "frame_end": 933
     },
     {
         "video_id": "06333",
@@ -6083,6 +6265,13 @@
         "frame_end": -1
     },
     {
+        "video_id": "70152",
+        "gloss": "dance",
+        "label": 58,
+        "frame_start": 7250,
+        "frame_end": 7361
+    },
+    {
         "video_id": "68988",
         "gloss": "dance",
         "label": 58,
@@ -6265,11 +6454,25 @@
         "frame_end": -1
     },
     {
+        "video_id": "17007",
+        "gloss": "doctor",
+        "label": 60,
+        "frame_start": 3820,
+        "frame_end": 3869
+    },
+    {
         "video_id": "68842",
         "gloss": "doctor",
         "label": 60,
         "frame_start": 1,
         "frame_end": 102
+    },
+    {
+        "video_id": "70049",
+        "gloss": "doctor",
+        "label": 60,
+        "frame_start": 7390,
+        "frame_end": 7475
     },
     {
         "video_id": "17015",
@@ -6447,6 +6650,13 @@
         "frame_end": -1
     },
     {
+        "video_id": "70051",
+        "gloss": "enjoy",
+        "label": 62,
+        "frame_start": 7902,
+        "frame_end": 8018
+    },
+    {
         "video_id": "19261",
         "gloss": "enjoy",
         "label": 62,
@@ -6543,6 +6753,13 @@
         "label": 63,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70376",
+        "gloss": "forget",
+        "label": 63,
+        "frame_start": 4255,
+        "frame_end": 4351
     },
     {
         "video_id": "22955",
@@ -6902,11 +7119,25 @@
         "frame_end": -1
     },
     {
+        "video_id": "42827",
+        "gloss": "pink",
+        "label": 67,
+        "frame_start": 2521,
+        "frame_end": 2590
+    },
+    {
         "video_id": "69430",
         "gloss": "pink",
         "label": 67,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70246",
+        "gloss": "pink",
+        "label": 67,
+        "frame_start": 1429,
+        "frame_end": 1537
     },
     {
         "video_id": "42831",
@@ -7182,6 +7413,13 @@
         "frame_end": 64
     },
     {
+        "video_id": "70207",
+        "gloss": "school",
+        "label": 70,
+        "frame_start": 1068,
+        "frame_end": 1179
+    },
+    {
         "video_id": "49601",
         "gloss": "school",
         "label": 70,
@@ -7350,6 +7588,20 @@
         "frame_end": -1
     },
     {
+        "video_id": "51206",
+        "gloss": "short",
+        "label": 72,
+        "frame_start": 3538,
+        "frame_end": 3580
+    },
+    {
+        "video_id": "70355",
+        "gloss": "short",
+        "label": 72,
+        "frame_start": 6591,
+        "frame_end": 6697
+    },
+    {
         "video_id": "51221",
         "gloss": "short",
         "label": 72,
@@ -7432,6 +7684,13 @@
         "label": 73,
         "frame_start": 1,
         "frame_end": 80
+    },
+    {
+        "video_id": "70356",
+        "gloss": "time",
+        "label": 73,
+        "frame_start": 6741,
+        "frame_end": 6836
     },
     {
         "video_id": "68171",
@@ -7903,6 +8162,20 @@
         "frame_end": 47
     },
     {
+        "video_id": "70357",
+        "gloss": "birthday",
+        "label": 78,
+        "frame_start": 6881,
+        "frame_end": 7016
+    },
+    {
+        "video_id": "70359",
+        "gloss": "birthday",
+        "label": 78,
+        "frame_start": 7225,
+        "frame_end": 7324
+    },
+    {
         "video_id": "06365",
         "gloss": "birthday",
         "label": 78,
@@ -7957,6 +8230,13 @@
         "label": 78,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70242",
+        "gloss": "brown",
+        "label": 79,
+        "frame_start": 869,
+        "frame_end": 964
     },
     {
         "video_id": "69028",
@@ -8125,6 +8405,13 @@
         "label": 80,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "10146",
+        "gloss": "cheat",
+        "label": 81,
+        "frame_start": 2340,
+        "frame_end": 2392
     },
     {
         "video_id": "10161",
@@ -8559,6 +8846,13 @@
         "label": 85,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70295",
+        "gloss": "how",
+        "label": 86,
+        "frame_start": 4221,
+        "frame_end": 4314
     },
     {
         "video_id": "28205",
@@ -9086,6 +9380,13 @@
         "frame_end": -1
     },
     {
+        "video_id": "70211",
+        "gloss": "paper",
+        "label": 92,
+        "frame_start": 2006,
+        "frame_end": 2106
+    },
+    {
         "video_id": "68127",
         "gloss": "paper",
         "label": 92,
@@ -9168,6 +9469,13 @@
         "label": 92,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70378",
+        "gloss": "pull",
+        "label": 93,
+        "frame_start": 5233,
+        "frame_end": 5344
     },
     {
         "video_id": "45265",
@@ -9266,6 +9574,13 @@
         "label": 94,
         "frame_start": 1,
         "frame_end": 59
+    },
+    {
+        "video_id": "70247",
+        "gloss": "purple",
+        "label": 94,
+        "frame_start": 1581,
+        "frame_end": 1681
     },
     {
         "video_id": "45439",
@@ -9504,6 +9819,13 @@
         "label": 96,
         "frame_start": 1,
         "frame_end": -1
+    },
+    {
+        "video_id": "70335",
+        "gloss": "son",
+        "label": 97,
+        "frame_start": 1749,
+        "frame_end": 1869
     },
     {
         "video_id": "53272",

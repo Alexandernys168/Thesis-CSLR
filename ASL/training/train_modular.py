@@ -32,14 +32,8 @@ def train_one_epoch(model, loader, criterion, optimizer, scaler, device, epoch):
     pbar = tqdm(loader, desc=f"Train Ep {epoch+1}", unit="batch")
     
     for inputs, labels in pbar:
-        # Handle Two-Stream Tuple
-        if isinstance(inputs, list) or isinstance(inputs, tuple):
-             # inputs is [rgb, flow]
-             rgb = inputs[0].to(device, non_blocking=True)
-             flow = inputs[1].to(device, non_blocking=True)
-             inputs = (rgb, flow)
-        else:
-             inputs = inputs.to(device, non_blocking=True)
+        
+        inputs = inputs.to(device, non_blocking=True)
              
         labels = labels.to(device, non_blocking=True)
         
@@ -82,13 +76,8 @@ def validate(model, loader, criterion, device, epoch):
     
     with torch.no_grad():
         for inputs, labels in pbar:
-            # Handle Two-Stream Tuple
-            if isinstance(inputs, list) or isinstance(inputs, tuple):
-                 rgb = inputs[0].to(device, non_blocking=True)
-                 flow = inputs[1].to(device, non_blocking=True)
-                 inputs = (rgb, flow)
-            else:
-                 inputs = inputs.to(device, non_blocking=True)
+            
+            inputs = inputs.to(device, non_blocking=True)
                  
             labels = labels.to(device, non_blocking=True)
             
@@ -149,9 +138,9 @@ def main():
     is_linux = os.name == 'posix'
     
     # Recommended settings for High-Performance Training
-    pin_memory = True if (in_docker or is_linux) else False
-    num_workers = CONFIG.get('num_workers', 4) # Allow config override
-    persistent_workers = True if (num_workers > 0 and (in_docker or is_linux)) else False
+    pin_memory = True
+    num_workers = CONFIG.get('num_workers', 6) # Allow config override
+    persistent_workers = True
     
     print(f"DataLoader Config: num_workers={num_workers}, pin_memory={pin_memory}, persistent_workers={persistent_workers}")
 

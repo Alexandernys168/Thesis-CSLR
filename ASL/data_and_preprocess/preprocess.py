@@ -10,8 +10,8 @@ from tqdm import tqdm
 # Configuration
 JSON_PATH = r"a:\Thesis-CSLR\ASL\1\wlasl-complete\WLASL_v0.3.json"
 VIDEO_DIR = r"a:\Thesis-CSLR\ASL\1\wlasl-complete\videos"
-OUTPUT_DIR = r"a:\Thesis-CSLR\ASL\data_tensors"
-NUM_CLASSES = 100
+OUTPUT_DIR = r"a:\Thesis-CSLR\ASL\data_tensors_1000"
+NUM_CLASSES = 1000
 TARGET_FRAMES = 64
 RESIZE_SIZE = 256
 
@@ -32,8 +32,8 @@ def preprocess():
         gloss_counts[gloss] = count
 
     counter = Counter(gloss_counts)
-    top_100 = counter.most_common(NUM_CLASSES)
-    top_glosses = {item[0] for item in top_100}
+    top_1000 = counter.most_common(NUM_CLASSES)
+    top_glosses = {item[0] for item in top_1000}
     
     # Save class mapping if not exists, though create_subset.py did this.
     # We'll regenerate it to be self-contained or rely on it.
@@ -64,6 +64,7 @@ def preprocess():
     
     success_count = 0
     fail_count = 0
+    failures = []
     
     for task in tqdm(tasks, desc="Preprocessing Videos"):
         video_id = task['video_id']
@@ -80,6 +81,7 @@ def preprocess():
         video_path = os.path.join(VIDEO_DIR, f"{video_id}.mp4")
         if not os.path.exists(video_path):
             fail_count += 1
+            failures.append({"video_id": video_id, "reason": "Missing File", "path": video_path})
             continue
             
         try:
@@ -101,13 +103,21 @@ def preprocess():
                 success_count += 1
             else:
                 fail_count += 1
+                failures.append({"video_id": video_id, "reason": "Load Failed (Empty/Corrupt)"})
         except Exception as e:
             # print(f"Error processing {video_id}: {e}")
             fail_count += 1
+            failures.append({"video_id": video_id, "reason": f"Exception: {str(e)}"})
             
     print(f"Preprocessing Complete.")
     print(f"Successfully processed: {success_count}")
     print(f"Failed (missing/corrupt): {fail_count}")
+
+    if failures:
+        fail_log_path = os.path.join(OUTPUT_DIR, "preprocessing_failures.json")
+        with open(fail_log_path, "w") as f:
+            json.dump(failures, f, indent=4)
+        print(f"Detailed failure log saved to {fail_log_path}")
 
 def load_and_process_video(path, start_frame, end_frame):
     cap = cv2.VideoCapture(path)
@@ -120,10 +130,23 @@ def load_and_process_video(path, start_frame, end_frame):
     start = max(0, start_frame - 1)
     end = end_frame
     
+    # Logic to handle "Already Cropped" videos
+    # If the JSON specifies a start frame way outside the video length,
+    # but the duration roughly matches the video length, assume it's pre-cropped.
+    
     if start >= total_frames:
-        cap.release()
-        return None
+        expected_len = end - start
         
+        # Allow small margin of error (e.g., +/- 15 frames)
+        if abs(total_frames - expected_len) < 15 or (total_frames > 0 and expected_len > total_frames):
+             # It looks like the video is the segment itself
+             # print(f"Detected cropped video {path}: JSON {start}-{end} vs Total {total_frames}")
+             start = 0
+             end = total_frames
+        else:
+             cap.release()
+             return None
+             
     if end < 0 or end > total_frames:
         end = total_frames
         
