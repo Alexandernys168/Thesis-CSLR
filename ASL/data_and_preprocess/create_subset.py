@@ -6,7 +6,7 @@ from collections import Counter
 # Configuration
 JSON_PATH = r"a:\Thesis-CSLR\ASL\1\wlasl-complete\WLASL_v0.3.json"
 OUTPUT_DIR = r"a:\Thesis-CSLR\ASL"
-NUM_CLASSES = 1000
+NUM_CLASSES = 100
 
 def create_subset():
     print(f"Loading {JSON_PATH}...")
@@ -31,13 +31,13 @@ def create_subset():
     # In case of ties, the order in the original list is preserved or arbitrary. 
     # For reproducibility, you might want to sort by gloss name too, but collections.Counter is usually stable enough for this.
     counter = Counter(gloss_counts)
-    top_1000 = counter.most_common(NUM_CLASSES)
+    top_100 = counter.most_common(NUM_CLASSES)
     
-    top_glosses = {item[0] for item in top_1000}
-    gloss_to_idx = {gloss: i for i, (gloss, _) in enumerate(top_1000)}
+    top_glosses = {item[0] for item in top_100}
+    gloss_to_idx = {gloss: i for i, (gloss, _) in enumerate(top_100)}
 
     print(f"Selected top {NUM_CLASSES} glosses.")
-    print(f"Example top 3: {top_1000[:3]}")
+    print(f"Example top 3: {top_100[:3]}")
 
     train_data = []
     val_data = []
@@ -79,8 +79,8 @@ def create_subset():
                      val_data.append(sample)
 
     # Save to files
-    train_out = os.path.join(OUTPUT_DIR, 'train_1000.json')
-    val_out = os.path.join(OUTPUT_DIR, 'val_1000.json')
+    train_out = os.path.join(OUTPUT_DIR, 'train_100.json')
+    val_out = os.path.join(OUTPUT_DIR, 'val_100.json')
     
     print(f"Saving {len(train_data)} training samples to {train_out}")
     with open(train_out, 'w') as f:

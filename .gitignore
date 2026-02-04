@@ -17,3 +17,11 @@ ASL/data_tensors_1000
 *.pth
 
 *.pt
+
+.env
+
+__pycache__/
+
+error_log.txt
+
+.venv/

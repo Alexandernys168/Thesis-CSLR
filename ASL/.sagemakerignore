@@ -1,0 +1,31 @@
+
+# Ignore hidden files
+.git/
+.gitignore
+.ipynb_checkpoints
+.venv
+__pycache__
+
+# Ignore the DATASET (Critical!)
+data_cache/
+./data_cache/
+**/data_cache/
+*.pt
+data_tensors_100/
+./data_tensors_100/
+**/data_tensors_100/
+*.csv
+
+# Ignore notebooks and large artifacts
+*.ipynb
+model.tar.gz
+output/
+
+*.log
+
+# Python artifacts
+.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/

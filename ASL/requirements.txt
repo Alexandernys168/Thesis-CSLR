@@ -5,3 +5,10 @@ pandas
 tqdm
 mediapipe
 numpy
+imageio
+matplotlib
+kagglehub
+sagemaker
+python-dotenv
+boto3 #for aws (s3)
+ipywidgets
