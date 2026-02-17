@@ -7,14 +7,17 @@ class ExperimentLogger:
         self.log_file = log_file
         self.headers = [
             "Timestamp", 
-            "Model_Type", 
+            "Model", 
             "Config_ID", 
             "Epoch", 
             "Train_Loss", 
-            "Train_Acc", 
+            "Train_Top1",
+            "Train_Top5",
+            "Train_Top10",
             "Val_Loss", 
-            "Val_Acc", 
-            "Best_Val_Acc",
+            "Val_Top1",
+            "Val_Top5",
+            "Val_Top10",
             "Learning_Rate"
         ]
         self._initialize_log()
@@ -33,24 +36,31 @@ class ExperimentLogger:
         Args:
             config (dict): Configuration dictionary (for Model_Type, Config_ID).
             epoch (int): Current epoch number.
-            train_stats (tuple): (train_loss, train_acc)
-            val_stats (tuple): (val_loss, val_acc)
+            train_stats (tuple): (train_loss, train_acc1, train_acc5, train_acc10)
+            val_stats (tuple): (val_loss, val_acc1, val_acc5, val_acc10)
             best_val_acc (float): Current best validation accuracy.
             current_lr (float): Current learning rate.
         """
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         
+        # Unpack stats
+        train_loss, train_acc1, train_top5, train_top10 = train_stats
+        val_loss, val_acc1, val_top5, val_top10 = val_stats
+
         row = [
             timestamp,
             config.get("model_type", "unknown"),
             config.get("config_id", "default"),
             epoch + 1, # 1-based logging
-            f"{train_stats[0]:.4f}",
-            f"{train_stats[1]:.4f}",
-            f"{val_stats[0]:.4f}",
-            f"{val_stats[1]:.4f}",
-            f"{best_val_acc:.4f}",
-            f"{current_lr:.6f}"
+                f"{train_loss:.4f}",
+                f"{train_acc1:.2f}",
+                f"{train_top5:.2f}",
+                f"{train_top10:.2f}",
+                f"{val_loss:.4f}",
+                f"{val_acc1:.2f}",
+                f"{val_top5:.2f}",
+                f"{val_top10:.2f}",
+                f"{current_lr:.6f}"
         ]
         
         try:

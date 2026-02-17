@@ -14,10 +14,10 @@ CONFIG = {
     
     # Model Configuration
     # Model Configuration
-    "model_type": "r3d_18", # Options: "r3d_18", "r3d_lstm", "2dcnn_lstm", "i3d_rgb", "i3d_flow", "i3d_two_stream"
+    "model_type": "r3d_attention", # Options: "r3d_18", "r3d_lstm", "2dcnn_lstm", "i3d_rgb", "i3d_flow", "i3d_two_stream", "r3d_attention"
     "num_classes": 1000,
     "pretrained": True,
-    "dropout_prob": 0.5,
+    "dropout_prob": 0.7,
     "lstm_hidden_size": 256,
     "lstm_layers": 2,
     
@@ -26,9 +26,9 @@ CONFIG = {
     "stream_type": "rgb", # Options: "rgb", "flow", "two_stream"
     "video_dir": os.path.join(ASL_ROOT, "1", "wlasl-complete", "videos"), # Path to raw videos (for 'on_the_fly')
     "use_hand_crop": False, # If True, assumes tensors are hand-cropped
-    "frames_per_clip": 64,
+    "frames_per_clip": 48,
     "resize_size": 256, # Resize frames to this size
-    "crop_size": 224,   # Input size to model
+    "crop_size": 192,   # Input size to model
     
     # Augmentation
     "augment": True,
@@ -37,19 +37,25 @@ CONFIG = {
     "aug_color_jitter": True,
     "aug_rotation_range": 15,
     "aug_erase_prob": 0.2,
+    "use_mixup": True,
+    "mixup_alpha": 0.4, # Beta distribution alpha (0.1-0.4 usually good)
     
     # Training Hyperparameters
     "use_lr_scheduler": True, 
-    "batch_size": 5, # I3D is heavy, possibly reduce batch size
-    "epochs": 100,
+    "batch_size": 11 , # Increased thanks to Gradient Checkpointing
+    "epochs": 400,
     "learning_rate": 1e-4, # I3D usually likes lower LR or SGD
     "weight_decay": 1e-4, # Optional regularization
     "clip_grad_norm": 1.0,
-    "early_stopping_patience": 10,
+    "early_stopping_patience": 25,
     "early_stopping_min_delta": 0.001,
     
     # Run Metadata
-    "config_id": "r3d_18_v1_1000", # Tag for the experiment log
+    "config_id": "r3d_attention_1000_mixup_v1", # Tag for the experiment log
+    
+    # Resume Configuration
+    "resume_checkpoint": r"a:\Thesis-CSLR\ASL\checkpoints\r3d_attention_1000_mixup_v1_best_checkpoint.pth", # Path to checkpoint to resume from, or None for fresh start. 
+                               # Example: os.path.join(ASL_ROOT, "checkpoints", "r3d_18_1000_best_checkpoint.pth")
 }
 
 # Ensure directories exist

@@ -17,3 +17,7 @@ ASL/data_tensors_1000
 *.pth
 
 *.pt
+ASL/training/__pycache__/train_modular.cpython-311.pyc
+ASL/data_and_preprocess/__pycache__/dataset.cpython-311.pyc
+ASL/model_and_config/__pycache__/config.cpython-311.pyc
+ASL/model_and_config/__pycache__/models.cpython-311.pyc

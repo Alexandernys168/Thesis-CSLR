@@ -145,7 +145,8 @@ class CNNRNN_2D(nn.Module):
 
         # --- Spatial Feature Extraction ---
         # Merge Batch and Time to process frames in parallel as 2D images
-        c_in = x.view(batch_size * t, c, h, w)
+        # Use reshape instead of view to handle non-contiguous tensors safely
+        c_in = x.reshape(batch_size * t, c, h, w)
 
         # Pass through 2D CNN
         features = self.cnn(c_in).view(batch_size, t, -1)
@@ -158,6 +159,94 @@ class CNNRNN_2D(nn.Module):
         # Concatenate the final forward and backward hidden states
         # hn shape: (num_layers*2, batch, hidden_size)
         return self.fc(torch.cat((hn[-2], hn[-1]), dim=1))
+
+
+class TemporalAttention(nn.Module):
+    """
+    Learns to weight important frames in the video clip.
+    Input: (Batch, Channels, Time, H, W)
+    Output: (Batch, Channels * H * W) weighted feature vector
+    """
+    def __init__(self, in_channels, hidden_dim=128):
+        super(TemporalAttention, self).__init__()
+        
+        # Reduces (C, H, W) to a single scalar per frame
+        self.avg_pool = nn.AdaptiveAvgPool3d((None, 1, 1)) 
+        
+        # Learnable attention weights
+        self.attention_net = nn.Sequential(
+            nn.Conv1d(in_channels, hidden_dim, kernel_size=1),
+            nn.ReLU(),
+            nn.Conv1d(hidden_dim, 1, kernel_size=1),
+            nn.Softmax(dim=2) # Normalize weights across Time dimension
+        )
+
+    def forward(self, x):
+        # x: (B, C, T, H, W)
+        
+        # 1. Global Average Pooling over Spatial dims -> (B, C, T, 1, 1)
+        global_feat = self.avg_pool(x).squeeze(-1).squeeze(-1) # (B, C, T)
+        
+        # 2. Compute Attention Scores
+        # weights: (B, 1, T)
+        weights = self.attention_net(global_feat)
+        
+        # 3. Apply Attention to original features
+        # Expand weights to (B, 1, T, 1, 1) to broadcast
+        x = x * weights.unsqueeze(-1).unsqueeze(-1)
+        
+        return x
+
+class ResNet3DWithAttention(nn.Module):
+    """
+    ResNet3D-18 with an added Temporal Attention module.
+    """
+    def __init__(self, num_classes, pretrained=True, dropout_prob=0.5):
+        super(ResNet3DWithAttention, self).__init__()
+        
+        # 1. Load Backbone
+        weights = R3D_18_Weights.DEFAULT if pretrained else None
+        self.backbone = r3d_18(weights=weights)
+        
+        # 2. Extract feature dimension (512 for ResNet18)
+        in_features = self.backbone.fc.in_features
+        
+        # 3. Insert Attention Module
+        # We need to hook into the model BEFORE the final pooling/FC layers.
+        # ResNet structure: stem -> layer1 -> ... -> layer4 -> avgpool -> fc
+        # We will keep layer1-4, then add attention, then pool.
+        
+        # Copy layers excluding avgpool and fc
+        self.features = nn.Sequential(
+            self.backbone.stem,
+            self.backbone.layer1,
+            self.backbone.layer2,
+            self.backbone.layer3,
+            self.backbone.layer4
+        )
+        
+        self.attention = TemporalAttention(in_channels=in_features)
+        
+        self.avgpool = nn.AdaptiveAvgPool3d(1)
+        
+        self.fc = nn.Sequential(
+            nn.Dropout(p=dropout_prob),
+            nn.Linear(in_features, num_classes)
+        )
+        
+    def forward(self, x):
+        # Extract features (B, 512, T/8, H/16, W/16)
+        x = self.features(x)
+        
+        # Apply Attention (Weight important time steps)
+        x = self.attention(x)
+        
+        # Pool and Classify
+        x = self.avgpool(x) # (B, 512, 1, 1, 1)
+        x = x.flatten(1)    # (B, 512)
+        x = self.fc(x)
+        
+        return x
 
 def get_model(config):
     """
@@ -184,6 +273,13 @@ def get_model(config):
             num_classes=config['num_classes'],
             hidden_size=config.get('lstm_hidden_size', 256),
             num_layers=config.get('lstm_layers', 2),
+            pretrained=config['pretrained'],
+            dropout_prob=config['dropout_prob']
+        )
+    elif model_type == 'r3d_attention':
+        # This uses the new ResNet3DWithAttention class
+        model = ResNet3DWithAttention(
+            num_classes=config['num_classes'],
             pretrained=config['pretrained'],
             dropout_prob=config['dropout_prob']
         )

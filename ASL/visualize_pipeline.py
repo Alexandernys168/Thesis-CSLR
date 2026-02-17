@@ -89,6 +89,15 @@ def main():
     # Instantiate Transforms
     transforms = VideoTransforms(augment=True)
     
+    # --- MANUAL OVERRIDE (Optional) ---
+    # Set this to an integer (e.g. 160) to debug specific crop sizes, or None to use CONFIG
+    HARDCODED_CROP_SIZE = 182 
+    
+    if HARDCODED_CROP_SIZE is not None:
+        print(f"⚠️ Overriding Config Crop Size: {CONFIG['crop_size']} -> {HARDCODED_CROP_SIZE}")
+        transforms.config['crop_size'] = HARDCODED_CROP_SIZE
+
+    
     # --- STAGE 0: RAW ---
     # Raw frames are list of (H, W, C) uint8
     raw_tensor = frames_to_tensor(raw_frames) # (C, T, H, W)
@@ -107,37 +116,13 @@ def main():
     print(f"Resized Tensor: {resized_tensor.shape}")
     
     # --- STAGE 2: CROP ---
-    # Use VideoTransforms.crop (it handles both random and center, let's FORCE Center for visualization consistency?
-    # User said "Cropped to 224x224 (Center Crop)".
-    # But also "Row 1: ... Augment". usually Augment includes Random Crop.
-    # The prompt says: "Step 2 (Crop): The frame cropped to 224x224 (Center Crop)" specifically.
-    # Then "Step 3 (Augmentation): The frame after Random Flip / Color Jitter".
-    
-    # Let's temporarily disable augment for the Crop step to get Center Crop
+
     transforms.augment = False
     cropped_tensor = transforms.crop(resized_tensor)
     transforms.augment = True # Re-enable for Step 3
     print(f"Cropped (Center): {cropped_tensor.shape}")
     
     # --- STAGE 3: AUGMENT ---
-    # User wants: "Random Flip / Color Jitter"
-    # VideoTransforms.spatial_augment does Flip, Rotate.
-    # What about Color Jitter? It was in `dataset.py` config but not explicitly in `_apply_augmentations` logic index I saw?
-    # Ah, I should check `dataset.py` again. I might have missed ColorJitter in my refactor if it wasn't there!
-    # Looking at `dataset.py` (previous `view_file` output):
-    # `_apply_augmentations` had: Temporal, Flip, Rotation, Crop, Erasing.
-    # Where is Color Jitter? 
-    # Config has `"aug_color_jitter": True`.
-    # But I don't see it in `_apply_augmentations`.
-    # Wait, the prompt says "Replicate the exact steps from dataset.py".
-    # If `dataset.py` didn't implement it despite Config having it, then I shouldn't invent it unless I fix `dataset.py`.
-    # But `dataset.py` original code (lines 34-105) does NOT show ColorJitter.
-    # So I will stick to what `dataset.py` does: Flip/Rotate.
-    # I'll call `spatial_augment`.
-    # Also `random_erase`? The prompt mentions "Random Flip / Color Jitter (if enabled)". 
-    # Since Jitter isn't in `dataset.py`, I'll skip Jitter but do the others.
-    # I'll chain `spatial_augment` and `random_erase` (if enabled in config).
-    
     augmented_tensor = transforms.spatial_augment(cropped_tensor)
     augmented_tensor = transforms.color_augment(augmented_tensor)
     augmented_tensor = transforms.random_erase(augmented_tensor)
@@ -179,9 +164,11 @@ def main():
     # 1. Raw
     show_img(axes[0, 0], raw_tensor, f"Raw\n{tuple(raw_tensor.shape)[2:]}")
     # 2. Resize
-    show_img(axes[0, 1], resized_tensor, f"Resize (256x256)\n{tuple(resized_tensor.shape)[2:]}")
+    resize_s = CONFIG.get("resize_size", 256)
+    show_img(axes[0, 1], resized_tensor, f"Resize ({resize_s}x{resize_s})\n{tuple(resized_tensor.shape)[2:]}")
     # 3. Crop (Center)
-    show_img(axes[0, 2], cropped_tensor, f"Center Crop (224x224)\n{tuple(cropped_tensor.shape)[2:]}")
+    crop_s = transforms.config.get("crop_size", 224)
+    show_img(axes[0, 2], cropped_tensor, f"Center Crop ({crop_s}x{crop_s})\n{tuple(cropped_tensor.shape)[2:]}")
     # 4. Augment
     show_img(axes[0, 3], augmented_tensor, "Augment (Flip/Rot/Erase)")
     
