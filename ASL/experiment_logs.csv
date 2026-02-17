@@ -1,4 +1,4 @@
-Timestamp,Model_Name,Config_ID,Epoch,Train_Loss,Train_Acc,Val_Loss,Val_Acc,Best_Val_Acc
+Timestamp,Model_Name,Config_ID,Epoch,Train_Loss,Train_Acc,Val_Loss,Val_Acc,Best_Val_Acc, LR
 2026-01-16 17:34:49,r3d_18,smart_hand_crop_v1,1,4.7394,0.0158,4.3986,0.0313,0.0000
 2026-01-16 17:40:03,r3d_18,smart_hand_crop_v1,2,4.4198,0.0437,4.2118,0.0509,0.0313
 2026-01-16 17:45:18,r3d_18,smart_hand_crop_v1,3,4.2852,0.0587,3.9862,0.0744,0.0509
